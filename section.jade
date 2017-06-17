@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru")
+	head
+		include jade/head.jade
+		//- script(src="node_modules/pixel-glass/script.js")
+		//- link(rel="stylesheet", href="node_modules/pixel-glass/styles.css")
+		style
+			//- | body {
+			//- //- |   background: url(pixel/section.jpg) center top
+			//- | }
+	body
+		include jade/header.jade
+		include jade/nav.jade
+		include jade/section/wallpaper.jade
+		include jade/section/in-types.jade
+		include jade/section/icon-edge.jade
+		include jade/section/need.jade
+		include jade/main/check.jade
+		include jade/main/win.jade
+		include jade/main/grand.jade
+		include jade/foo.jade
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.8/svg4everybody.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js")
+		script(src="js/main.js")
