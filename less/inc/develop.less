@@ -1,0 +1,214 @@
+.m-in-types__price {
+  margin-top: -1px;
+  padding: 10px 0 21px;
+  color: #c62825;
+  font-size: 20px;
+  font-weight: 500;
+}
+.m-in-types__price-rubl {
+  color: #555;
+  font-weight: 400;
+}
+.m-in-types__price-unit {
+  color: #555;
+  font-weight: 400;
+  font-size: 17px;
+}
+/* developer */
+.developer {
+  margin: 0;
+  line-height: 32px;
+  text-align: center;
+  width: 100%;
+}
+.developer span {
+  height: 32px;
+  display: inline-block;
+}
+.developer .icon {
+  background: url('https://habrastorage.org/files/317/20e/852/31720e852d58421a92442b82a61e4465.png') no-repeat center;
+  display: inline-block;
+  height: 32px;
+  width: 160px;
+  text-decoration: none;
+}
+.developer .icon:hover {
+  background: url('https://habrastorage.org/files/c02/8f7/c64/c028f7c64b824d89808d239b67de80e2.png') no-repeat center;
+  text-decoration: none;
+}
+/* sendForm */
+.open-form {
+  cursor: pointer;
+}
+#sendForm .overlay {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 300;
+}
+#sendForm .box {
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 2ex 2ex 4ex;
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  text-align: center;
+  width: 400px;
+  z-index: 305;
+  margin-left: -200px;
+}
+#sendForm .title_form {
+  font-size: 150%;
+  font-weight: bold;
+  padding: 15px 0 10px;
+}
+#sendForm input,
+#sendForm textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #999;
+  color: #333;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  padding: 1ex 0;
+  outline: none;
+  width: 95%;
+}
+#sendForm textarea {
+  border: 1px solid #999;
+  max-width: 95%;
+  min-height: 10ex;
+  max-height: 25ex;
+}
+#sendForm button {
+  padding: 1ex 0;
+  width: 95%;
+}
+#sendForm .close {
+  color: #333;
+  cursor: pointer;
+  font-size: 275%;
+  float: right;
+  height: 2.5ex;
+  line-height: 3.5ex;
+  margin: -1.75ex -1ex 0 0;
+  width: 2.5ex;
+}
+@media screen and (max-width: 680px) {
+  #sendForm .box {
+    margin-left: -175px;
+    padding: 1.5ex;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 490px) {
+  #sendForm .box {
+    margin-left: -160px;
+    width: 320px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #sendForm .box {
+    width: 280px;
+    margin-left: -140px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #sendForm .box {
+    width: 260px;
+    margin-left: -130px;
+  }
+}
+.pointer {
+  cursor: pointer;
+}
+#menu_left {
+  width: 100%;
+  z-index: 20;
+  top: 40px;
+  background: #eaeaea;
+  display: none;
+  margin-bottom: 30px;
+}
+#menu_left.active {
+  display: block;
+}
+#menu_left > div {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  margin: 1px 0 0;
+  padding: 0 0 0 19px;
+  background: url(/images/menu_left/bg.jpg) repeat-x;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#menu_left > div:hover,
+#menu_left > div#hover {
+  background: url(/images/menu_left/bgH.jpg) repeat-x;
+}
+@media (min-width: 768px) {
+  #menu_left {
+    width: 200px;
+    position: absolute;
+  }
+  #menu_left > div {
+    padding: 0 0 0 9px;
+    font-size: 95%;
+  }
+}
+@media (min-width: 992px) {
+  #menu_left {
+    width: 220px;
+  }
+  #menu_left > div {
+    padding: 0 0 0 19px;
+    font-size: 100%;
+  }
+}
+@media (min-width: 1220px) {
+  #menu_left {
+    width: 300px;
+  }
+}
+ul.menu_left_inside {
+  list-style: none;
+  width: 100%;
+  padding: 5px 0 5px 19px;
+  background: #eaeaea;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  display: none;
+}
+ul.menu_left_inside li {
+  padding: 4px 0;
+}
+ul.menu_left_inside li a {
+  color: #302715;
+  text-decoration: underline;
+}
+ul.menu_left_inside li a:hover {
+  text-decoration: none;
+}
+ul.menu_left_inside hr {
+  margin-right: 15px;
+  border: 0px;
+  border-bottom: 1px dotted #999;
+}
+.pdp {
+  font-size: 85%;
+  padding: 10px;
+}
+.pdp a {
+  color: #c62825;
+}

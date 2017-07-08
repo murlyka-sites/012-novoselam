@@ -26,6 +26,10 @@
   color: #bd272c;
   text-transform: uppercase;
 }
+.section-banners .slick-next:after,
+.section-banners .slick-prev:after,
+.catalog-goods .slick-next:after,
+.catalog-goods .slick-prev:after,
 .i,
 .i-gift,
 .i-phone,
@@ -35,11 +39,7 @@
 .i-slick-prev,
 .i-social-fb,
 .i-social-tw,
-.i-social-vk,
-.catalog-goods .slick-prev:after,
-.catalog-goods .slick-next:after,
-.section-zero .slick-prev:after,
-.section-zero .slick-next:after {
+.i-social-vk {
   display: inline-block;
   background-image: url(../images/sprite.png);
   vertical-align: middle;
