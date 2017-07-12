@@ -1,0 +1,70 @@
+.card-catalog
+	.card-catalog__title
+		.card-catalog__sort.sort
+			.sort__title Сортировать по:
+			.sort__items
+				.sort__item.sort__item_active
+					| По цене
+					svg.sort__arrow(width="11" height="13"): use(xlink:href="images/sprite.svg#arrow")
+				.sort__item 
+					| По названию
+					svg.sort__arrow(width="11" height="13"): use(xlink:href="images/sprite.svg#arrow")
+		.card-catalog__output.card-output
+			.card-output__title Вывод:
+			.card-output__items
+				.card-output__item.card-output__item_active: svg.card-output__icon(width="22" height="19"): use(xlink:href="images/sprite.svg#output-list")
+				.card-output__item: svg.card-output__icon(width="21" height="19"): use(xlink:href="images/sprite.svg#output-grid")
+
+	.card-catalog__items
+		.card-catalog__item.catalog-card
+			header.catalog-card__header
+				.catalog-card__code код: 233212
+				.catalog-card__stock
+					span.catalog-card__hidden-grid В наличии 
+					| 1053 шт.
+			.catalog-card__body
+				.catalog-card__title Газобетон 250х250х625 мм AEROC EcoTerm (D400) паз-гребень
+				.catalog-card__preview.catalog-card__preview_cheaply
+					img.catalog-card__pr(width="180" height="122" src="images/side/catalog/2.jpg")
+				.catalog-card__prices
+					.catalog-card__price цена: 
+						span.catalog-card__price-big 
+							span.red 4454
+							span.rubl  Р
+					.catalog-card__form-of-sale.form-of-sale
+						button.form-of-sale__button.form-of-sale__button_active За м.куб.
+						button.form-of-sale__button За шт.
+			footer.catalog-card__foo
+				a.catalog-card__compare(href="#") Добавить к сравнению
+				.catalog-card__buy
+					input.catalog-card__buy-spinner(type="number" min="1")
+					button.catalog-card__buy-button 
+						svg.catalog-card__buy-icon(width="31" height="25"): use(xlink:href="images/sprite.svg#basket-white")
+						span.catalog-card__hidden-grid Добавить 
+						| в корзину
+		.card-catalog__item.catalog-card
+			header.catalog-card__header
+				.catalog-card__code код: 233212
+				.catalog-card__stock
+					span.catalog-card__hidden-grid В наличии 
+					| 1053 шт.
+			.catalog-card__body
+				.catalog-card__title Газобетон 250х250х625 мм AEROC EcoTerm (D400) паз-гребень
+				.catalog-card__preview.catalog-card__preview_cheaply
+					img.catalog-card__pr(width="180" height="122" src="images/side/catalog/2.jpg")
+				.catalog-card__prices
+					.catalog-card__price цена: 
+						span.catalog-card__price-big 
+							span.red 4454
+							span.rubl  Р
+					.catalog-card__form-of-sale.form-of-sale
+						button.form-of-sale__button.form-of-sale__button_active За м.куб.
+						button.form-of-sale__button За шт.
+			footer.catalog-card__foo
+				a.catalog-card__compare(href="#") Добавить к сравнению
+				.catalog-card__buy
+					input.catalog-card__buy-spinner(type="number" min="1")
+					button.catalog-card__buy-button 
+						svg.catalog-card__buy-icon(width="31" height="25"): use(xlink:href="images/sprite.svg#basket-white")
+						span.catalog-card__hidden-grid Добавить 
+						| в корзину

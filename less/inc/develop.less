@@ -135,27 +135,66 @@
   width: 100%;
   z-index: 20;
   top: 40px;
-  background: #eaeaea;
   display: none;
   margin-bottom: 30px;
+  box-shadow: 3px 4px 15px rgba(39, 39, 41, 0.1);
+  background-color: #ffffff;
+  font-family: Roboto;
+  font-weight: 400;
+  
+  color: #232323;
 }
 #menu_left.active {
   display: block;
 }
 #menu_left > div {
+  position: relative;
   height: 40px;
   width: 100%;
   line-height: 40px;
   margin: 1px 0 0;
-  padding: 0 0 0 19px;
-  background: url(/images/menu_left/bg.jpg) repeat-x;
-  color: #fff;
-  text-decoration: underline;
+  padding: 0 19px;
+  
+  &:before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 10;
+    margin-top: -2px;
+    width: 6px;
+    height: 4px;
+    background: url(../images/sprite/product-select-arrow.svg) 100% 100%;
+  }
+  
+  &:after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #e8e8e8;
+    position: relative;
+    bottom: -1px;
+  }
+  
+  // background: url(/images/menu_left/bg.jpg) repeat-x;
+  
+  color: #232323;
+  // text-decoration: underline;
   cursor: pointer;
 }
 #menu_left > div:hover,
 #menu_left > div#hover {
-  background: url(/images/menu_left/bgH.jpg) repeat-x;
+  background-color: #e8e8e8;
+  // background: url(/images/menu_left/bgH.jpg) repeat-x;
+  
+  &:after {
+    display: none;
+  }
+
+  &:before {
+    display: block;
+  }
 }
 @media (min-width: 768px) {
   #menu_left {
@@ -163,7 +202,7 @@
     position: absolute;
   }
   #menu_left > div {
-    padding: 0 0 0 9px;
+    padding: 0 9px;
     font-size: 95%;
   }
 }
@@ -185,17 +224,17 @@ ul.menu_left_inside {
   list-style: none;
   width: 100%;
   padding: 5px 0 5px 19px;
-  background: #eaeaea;
+  background: rgb(247, 247, 247);
+  
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
   display: none;
 }
 ul.menu_left_inside li {
-  padding: 4px 0;
+  padding: 8px 0;
 }
 ul.menu_left_inside li a {
-  color: #302715;
-  text-decoration: underline;
+  color: #555555;
 }
 ul.menu_left_inside li a:hover {
   text-decoration: none;
